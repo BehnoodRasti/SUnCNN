@@ -70,7 +70,7 @@ save_result=False
 import time
 from tqdm import tqdm
 rmax=9
-for fi in tqdm(range(2,3)):
+for fi in tqdm(range(tol1)):
     for fj in tqdm(range(tol2)):
             #%%
         img_np_gt=np.clip(img_np_gt, 0, 1)
