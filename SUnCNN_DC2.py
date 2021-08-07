@@ -59,7 +59,6 @@ EE = mat4["EE"]
 LibS=EE.shape[1]
 #%%
 npar=np.zeros((1,3))
-npar=np.zeros((1,3))
 npar[0,0]=14.7
 npar[0,1]=46.5
 npar[0,2]=147
