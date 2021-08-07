@@ -205,8 +205,8 @@ for fi in tqdm(range(tol1)):
             out_avg_np = out_avg.detach().cpu().squeeze().numpy()
             MAE_LR_avg= 100*np.mean(abs(A_true_np.astype(np.float32)- np.clip(out_avg_np, 0, 1)))
             MAE_LR= 100*np.mean(abs(A_true_np.astype(np.float32)- np.clip(out_LR_np, 0, 1)))
-            SRE=20*np.log10(LA.norm(A_true_np.astype(np.float32).reshape((EE.shape[1],nr1*nc1)),'fro')/LA.norm((A_true_np.astype(np.float32)- np.clip(out_LR_np, 0, 1)).reshape((EE.shape[1],nr1*nc1)),'fro'))
-            SRE_avg=20*np.log10(LA.norm(A_true_np.astype(np.float32).reshape((EE.shape[1],nr1*nc1)),'fro')/LA.norm((A_true_np.astype(np.float32)- np.clip(out_avg_np, 0, 1)).reshape((EE.shape[1],nr1*nc1)),'fro'))
+            SRE=10*np.log10(LA.norm(A_true_np.astype(np.float32).reshape((EE.shape[1],nr1*nc1)),'fro')/LA.norm((A_true_np.astype(np.float32)- np.clip(out_LR_np, 0, 1)).reshape((EE.shape[1],nr1*nc1)),'fro'))
+            SRE_avg=10*np.log10(LA.norm(A_true_np.astype(np.float32).reshape((EE.shape[1],nr1*nc1)),'fro')/LA.norm((A_true_np.astype(np.float32)- np.clip(out_avg_np, 0, 1)).reshape((EE.shape[1],nr1*nc1)),'fro'))
             print ('Iteration %05d  MAE_LR: %f MAE_LR_avg: %f  SRE: %f SRE_avg: %f ' % (i, MAE_LR, MAE_LR_avg, SRE, SRE_avg), '\r', end='')
         # if  save_result is True:
         #      scipy.io.savemat("C:/Users/behnood/Desktop/Sparse Unmixing/Results/Sim2/demo1/10runs/out_avg_np%01d%01d.mat" % (fi+2,fj+1),
