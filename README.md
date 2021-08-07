@@ -5,7 +5,7 @@ SUnCNN  is  the  first  deep  learning-based  technique proposed for sparse unmi
 
 Note that the model used is a modified version of the DIP software (https://github.com/DmitryUlyanov/deep-image-prior) which is uploaded here and therefore the copyright of it is preseved.
 
-Note that the results in the paper are mean values over ten experiments. tol2 variable is the number of runs.
+Note that the results reported in the paper are mean values over ten experiments. tol2 variable is the number of runs.
 
 If you use this code please cite the following paper Rasti, B., and Koirala, "SUnCNN: Sparse Unmixing Using Unsupervised Convolutional Neural Network" IEEE Geoscience and Remote Sensing Letters.
 
