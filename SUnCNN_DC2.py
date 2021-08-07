@@ -41,18 +41,18 @@ PLOT = False
 import scipy.io
 #%%
 #%%
-fname2  = "C:/Users/Behnood/Desktop/SUnCNN_Codes/Data/DC2/Y_clean.mat"
+fname2  = "Data/DC2/Y_clean.mat"
 mat2 = scipy.io.loadmat(fname2)
 img_np_gt = mat2["Y_clean"]
 img_np_gt = img_np_gt.transpose(2,0,1)
 [p1, nr1, nc1] = img_np_gt.shape
 #%%
-fname3  = "C:/Users/Behnood/Desktop/SUnCNN_Codes/Data/DC2/XT.mat"
+fname3  = "Data/DC2/XT.mat"
 mat3 = scipy.io.loadmat(fname3)
 A_true_np = mat3["XT"]
 
 #%%
-fname4  = "C:/Users/Behnood/Desktop/SUnCNN_Codes/Data/DC2/EE.mat"
+fname4  = "Data/DC2/EE.mat"
 mat4 = scipy.io.loadmat(fname4)
 EE = mat4["EE"]
 #%%
