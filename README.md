@@ -9,5 +9,6 @@ Note that the results reported in the paper are mean values over ten experiments
 
 If you use this code please cite the following paper Rasti, B., and Koirala, "SUnCNN: Sparse Unmixing Using Unsupervised Convolutional Neural Network" IEEE Geoscience and Remote Sensing Letters.
 
+DC1: The fractional abundance of endmember 2. From top to bottom SNR of 20, 30, and 40 dB.
 ![image](https://user-images.githubusercontent.com/61419984/128629548-8d3681f6-5dc3-41fa-90f9-0596e859ca62.png)
 
