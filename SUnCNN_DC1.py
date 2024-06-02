@@ -18,8 +18,8 @@ from models import *
 import torch
 import torch.optim
 
-from skimage.measure import compare_psnr
-from skimage.measure import compare_mse
+from skimage.metrics import peak_signal_noise_ratio as compare_psnr
+from skimage.metrics import mean_squared_error as compare_mse
 from utils.denoising_utils import *
 
 from skimage._shared import *
